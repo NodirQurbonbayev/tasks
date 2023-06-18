@@ -43,4 +43,27 @@ func main() {
 	fmt.Println(vazifalar.EvenOdd(a))
 	fmt.Println(vazifalar.EvenOdd(b))
 	fmt.Println(vazifalar.EvenOdd(c))
+	//SumArray
+	fmt.Println(vazifalar.SumArray(2, 3, 4))
+	//TeskariCh
+	n := []int{1, 2, 3, 4, 5}
+	vazifalar.ArrayTeskari(n)
+	//ToqIndex
+	arr := []int{4, 5, 6, 7, 69}
+	odds, _ := vazifalar.OddCountNum(arr)
+	for _, v := range odds {
+		fmt.Println("Toqlari= ", arr[v])
+	}
+	_, count := vazifalar.OddCountNum(arr)
+	fmt.Println("Toqlari soni= ", count)
+	fmt.Println("//////////////////////////////////////////////////////////////////////////////////////////////")
+	//EvenIndex
+	massiv := []int{2, 3, 4, 6, 8, 89}
+	even, _ := vazifalar.EvenCountNum(massiv)
+	for _, v := range even {
+		fmt.Println("Juftlari= ", massiv[v])
+	}
+	_, EvenCount := vazifalar.EvenCountNum(massiv)
+	fmt.Println("Juftlar soni= ", EvenCount)
+
 }
