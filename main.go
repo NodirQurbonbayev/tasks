@@ -56,7 +56,7 @@ func main() {
 	}
 	_, count := vazifalar.OddCountNum(arr)
 	fmt.Println("Toqlari soni= ", count)
-	fmt.Println("//////////////////////////////////////////////////////////////////////////////////////////////")
+	fmt.Println("/////////////////////////////////////////////////////////////////////////")
 	//EvenIndex
 	massiv := []int{2, 3, 4, 6, 8, 89}
 	even, _ := vazifalar.EvenCountNum(massiv)
@@ -65,5 +65,23 @@ func main() {
 	}
 	_, EvenCount := vazifalar.EvenCountNum(massiv)
 	fmt.Println("Juftlar soni= ", EvenCount)
+	//EvenOddIndex
+	sum := []int{4, 5, 7, 8, 69}
+	fmt.Println(vazifalar.EvenCount(sum))
+	fmt.Println(vazifalar.Oddcount(sum))
+	//KarraliArray
+	array := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	k := 5
+
+	fmt.Print(vazifalar.KarraliArray(array, k))
+	//EvenArray
+	son := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	fmt.Println(vazifalar.EvenArray(son))
+	//ArraySum
+	Easy := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	j := 2
+	l := 7
+	medium := vazifalar.ArraySum(Easy, j, l)
+	fmt.Println(medium)
 
 }
